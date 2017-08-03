@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS `oauth_users`;
+CREATE TABLE `oauth_users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `service` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `service_userid` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `tokens` longtext CHARACTER SET utf8 NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `email` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `avatar` varchar(255) CHARACTER SET utf8 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+ALTER TABLE `oauth_users`
+  ADD UNIQUE KEY `unique_index` (`service`,`email`);

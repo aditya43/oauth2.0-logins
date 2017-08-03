@@ -1,0 +1,92 @@
+* {
+    font-family: Consolas;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+a:active,
+a:hover {
+    outline-width: 0;
+}
+
+.oAuthService {
+    padding: 50px 50px;
+}
+
+.service {
+    color: #f44336;
+    font-size: 20px;
+}
+
+.btn {
+    background-color: white;
+
+    color: #000;
+    border: 2px solid #f44336;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.avatar {
+    border-radius: 100%;
+    background-color: lightblue;
+    background-size: 170px;
+    background-image: url("photo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 170px;
+    height: 170px;
+    float: left;
+    margin-right: 20px
+}
+
+.google_login,
+.facebook_login,
+.twitter_login,
+.linkedin_login,
+.microsoft_login,
+.yahoo_login {
+    display: block;
+    width: 215px;
+    height: 100px;
+    float: left;
+    clear: both;
+}
+
+.google_login {
+    background: url(../images/google_signin.png) no-repeat;
+}
+
+.facebook_login {
+    background: url(../images/facebook_signin.png) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.twitter_login {
+    background: url(../images/twitter_signin.png) no-repeat;
+}
+
+.linkedin_login {
+    background: url(../images/linkedin_signin.png) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.microsoft_login {
+    background: url(../images/microsoft_signin.png) no-repeat;
+}
+
+.yahoo_login {
+    background: url(../images/yahoo_signin.png) no-repeat;
+}
